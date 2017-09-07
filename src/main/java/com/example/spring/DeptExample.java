@@ -11,7 +11,6 @@ public class DeptExample {
 		
 		System.out.println(dept);
 		System.out.println(dept.getDeptno() + ", " + dept.getDname() + ", " + dept.getLoc());
-
 	}
 
 }
