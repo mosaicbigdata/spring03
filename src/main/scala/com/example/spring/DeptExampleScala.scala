@@ -6,7 +6,7 @@ object DeptExampleScala {
 	
 	def main(args: Array[String]): Unit = {
 
-		var dept : Dept = new Dept;
+		var dept : Dept = new Dept(10, "xxx", "yyy");
 		dept.deptno = 10;
 		dept.dname = "xxx"
 		dept.loc = "yyyy"
@@ -14,6 +14,6 @@ object DeptExampleScala {
 		println(dept);
 		dept.print();
 		dept.print2();
-		println(dept.deptno + dept.dname);
+		println(dept.getDeptno + dept.dname);
 	}
 }
