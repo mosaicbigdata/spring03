@@ -10,8 +10,8 @@ object DeptExampleScala {
 		dept.deptno = 10;
 		dept.dname = "xxx"
 		dept.loc = "yyyy"
-	
-		println(dept);
+		
+		println(dept)
 		dept.print();
 		dept.print2();
 		println(dept.getDeptno + dept.dname);

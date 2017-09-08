@@ -29,6 +29,7 @@ public class Dept {
 	
 	public void print() {
 		System.out.println("###1 " + toString());
+		throw new RuntimeException("my exception...");
 	}
 	
 	public void print2() {

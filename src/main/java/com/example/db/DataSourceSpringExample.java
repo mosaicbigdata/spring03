@@ -5,6 +5,8 @@ import java.sql.SQLException;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
+import com.example.spring.Dept;
+
 public class DataSourceSpringExample {
 
 	public static void main(String[] args) throws SQLException {
@@ -23,7 +25,12 @@ public class DataSourceSpringExample {
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@");
 		
 		CityDao dao = ctx.getBean(CityDao.class);	// Bean 사용
+		System.out.println("dao = " + ctx.getBean("city"));
 		System.out.println(dao.selectAll());
+		
+		Dept dept = ctx.getBean(Dept.class);
+		dept.setDeptno(10);
+		dept.print();
 		
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("before BeanFacotry ctx.close");

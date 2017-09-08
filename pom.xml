@@ -18,52 +18,52 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					<configuration>
-						<annotationProcessorPaths>
-							<path>
-								<groupId>org.projectlombok</groupId>
-								<artifactId>lombok</artifactId>
-								<version>1.16.18.1</version>
-							</path>
-						</annotationProcessorPaths>
-					</configuration>
+					<!-- <configuration> -->
+					<!-- <annotationProcessorPaths> -->
+					<!-- <path> -->
+					<!-- <groupId>org.projectlombok</groupId> -->
+					<!-- <artifactId>lombok</artifactId> -->
+					<!-- <version>1.16.18.1</version> -->
+					<!-- </path> -->
+					<!-- </annotationProcessorPaths> -->
+					<!-- </configuration> -->
 				</configuration>
 			</plugin>
-<!-- 			<plugin> -->
-<!-- 				<groupId>org.projectlombok</groupId> -->
-<!-- 				<artifactId>lombok-maven-plugin</artifactId> -->
-<!-- 				<version>1.16.18.1</version> -->
-<!-- 				<executions> -->
-<!-- 					<execution> -->
-<!-- 						<id>lombok-compile</id> -->
-<!-- 						<phase>compile</phase> -->
-<!-- 						<goals> -->
-<!-- 							<goal>delombok</goal> -->
-<!-- 						</goals> -->
-<!-- 						<configuration> -->
-<!-- 						<verbose>true</verbose> -->
-<!-- 						<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory> -->
-<!-- 						</configuration> -->
-<!-- 					</execution> -->
-<!-- 				</executions> -->
-<!-- 			</plugin> -->
+			<!-- <plugin> -->
+			<!-- <groupId>org.projectlombok</groupId> -->
+			<!-- <artifactId>lombok-maven-plugin</artifactId> -->
+			<!-- <version>1.16.18.1</version> -->
+			<!-- <executions> -->
+			<!-- <execution> -->
+			<!-- <id>lombok-compile</id> -->
+			<!-- <phase>compile</phase> -->
+			<!-- <goals> -->
+			<!-- <goal>delombok</goal> -->
+			<!-- </goals> -->
+			<!-- <configuration> -->
+			<!-- <verbose>true</verbose> -->
+			<!-- <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory> -->
+			<!-- </configuration> -->
+			<!-- </execution> -->
+			<!-- </executions> -->
+			<!-- </plugin> -->
 			<plugin>
 				<groupId>net.alchim31.maven</groupId>
 				<artifactId>scala-maven-plugin</artifactId>
 				<version>3.2.2</version>
 				<configuration>
 					<recompileMode>incremental</recompileMode>
-<!-- 					<compileOrder>ScalaThenJava</compileOrder> -->
+					<!-- <compileOrder>ScalaThenJava</compileOrder> -->
 					<compileOrder>JavaThenScala</compileOrder>
-<!-- 					<args> -->
-<!-- 						<arg>-target:jvm-1.8</arg> -->
-<!-- 					</args> -->
-<!-- 					<javacArgs> -->
-<!-- 						<javacArg>-source</javacArg> -->
-<!-- 						<javacArg>1.8</javacArg> -->
-<!-- 						<javacArg>-target</javacArg> -->
-<!-- 						<javacArg>1.8</javacArg> -->
-<!-- 					</javacArgs> -->
+					<!-- <args> -->
+					<!-- <arg>-target:jvm-1.8</arg> -->
+					<!-- </args> -->
+					<!-- <javacArgs> -->
+					<!-- <javacArg>-source</javacArg> -->
+					<!-- <javacArg>1.8</javacArg> -->
+					<!-- <javacArg>-target</javacArg> -->
+					<!-- <javacArg>1.8</javacArg> -->
+					<!-- </javacArgs> -->
 				</configuration>
 				<executions>
 					<execution>
@@ -126,6 +126,11 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.42</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.8.10</version>
 		</dependency>
 	</dependencies>
 
